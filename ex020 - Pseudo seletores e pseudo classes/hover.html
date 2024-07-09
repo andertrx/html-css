@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo seletores</title>
+       <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover{
+            color: rgb(245, 224, 37);
+        }
+
+        div > p {
+            display: none;
+            
+        }
+        
+        div:hover > p{
+           
+            display: block;
+            color: rgb(9, 93, 167);
+            background-color: brown;
+        }
+  
+              
+       
+       </style>
+        
+    
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>Menu
+          <p>1</p>
+          <p>2</p>
+    </div>
+</body>
+</html>

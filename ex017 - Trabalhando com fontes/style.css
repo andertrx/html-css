@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    font: normal 20px Arial, Verdana, Serif;
+
+}
+
+h1{
+    /*shorthand font (propriedade shorhand)*/
+    /*font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 2em;
+    font-style: italic;
+    */
+    font: italic bolder 2em 'courier New', courier;
+    /*Ordem para que o shortland funcione(não é obrigatorio usar todos) 
+    font-style ► font-weight ► font-size ► font-family
+    */
+    text-align: center;
+    
+   
+}
+p{
+    text-align: center;
+    text-align: justify;
+    text-indent: 20px;
+    
+}
+bodyy{
+    font-family: 'Franklin Gothic Medium';
+    /* 
+    Medidas absolutas
+    cm, mm, in , px(recomendado) , pt, pc
+
+    medidas relativas:display
+    em (Recomendado), ex, rem,vw,vh, %
+    */
+    font-size: 1em ;
+    font-weight:normal; /*Indica o peso da fonte (cuidar para não confundir weight (peso), widght(largura),height (altura))*/ 
+    
+    /* lighter, normal, bold,bolder (Tipos de varições de peso, porém não é disponíveis em todas as fontes)*/
+    
+    /* Pode-se também ter pesos (numérica), de 100 a 900, sempre de 100 em 100*/
+    font-style: italic; /* mudar o estilo*/
+    /*text-decoration: underline; /* sublinhado*/
+
+}
+*/

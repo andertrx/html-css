@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links para download</title>
+</head>
+<body>
+     <h2>Criando imagens que se adaptam sozinhas</h2>
+     <p>Confira as fotos abaixo, tente abrir em vários dispositvos diferentes ou simplismente diminua o tamanho do seu navegador </p>
+     <!--Colocando imagens de maneira que se adaptam comforme a tela do dispositvo, sempre a menos imagem vem primeiro-->
+     <picture>
+        <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="imagens/m.png" type="image/png">
+        
+        <img src="imagens/g.png" alt="imagem flexivel">
+     </picture>
+
+        <!--aPRENDENDO DOIS JEITOS DE COLOCAR AUDIO MP-->
+
+     <audio src="midia/audio.mp3" controls autoplay></audio>
+     <!--tipos compatíveis mp3, WAV, ogg-->
+
+     <audio preload="metadata" autoplay controls>
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegui reproduzir</p>
+     </audio>
+    <!--Acima vemos a possibilidade de carregar varios arquivos de audio, caso um não dê certo, ele pega o de baixo e caso não toque nenhum, ele printa a mensagem
+    O atributo preload é usado em elementos audio para carregar arquivos grandes. Ele pode assumir 3 valores:
+
+"none" não carrega o arquivo
+"auto" carrega o arquivo
+"metadata" carrega apenas os meta dados do arquivo-->
+     <video src="videos/gato.mp4"  autoplay></video>
+     
+
+</body>
+</html>

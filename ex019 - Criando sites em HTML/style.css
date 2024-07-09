@@ -1,0 +1,20 @@
+@charset "UTF-8"
+/*em html é id  = em css é #     */
+/*em html é class  = em css é .  */
+
+
+h1{
+    color: rgb(69, 207, 45);
+}
+h1#principal{
+    color: rgb(192, 26, 26);
+    background: rgb(44, 14, 14);
+}
+h2{
+    color: blue;
+}
+
+body{
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
