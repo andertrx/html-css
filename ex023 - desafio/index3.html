@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(n2) {
+        background-color: aqua;
+
+        }
+
+        tbody > tr:nth-child(odd) {
+
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>      
+        
+    <table>
+        <caption> Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                          
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Lauro</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                          
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                          
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+        
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td>9</td>
+                </tr>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
