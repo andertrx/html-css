@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- 
+        1 - o Action serve para fazer o input do submit lá em baixo 
+         2 - O auto complete por de desativado
+         3 - Existem dois  métodos de envio de formulário GET (só pode enviar no máximo 3mil letras e não recomendado para campos e dados sensíveis) e 
+         
+         POST (esconde  os dados colocados na URL, mas não significa que é o melhor, ele só não mostra na cara do usuário)
+         -->
+
+        <p> <label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        
+        <!-- para criar campos, basta colocar o input <input type="text" name="nome" id="inome"> -->
+
+        <!-- Label serve para atrelar o nome escrito  ao campo  disponível "etiquetar" -->
+
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" ></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+     
+</body>
+</html>
+
+<!---->
