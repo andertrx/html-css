@@ -38,6 +38,7 @@ span#burguer:hover {
 menu {
     display: none;
     text-align: center;
+   
     
 }
 
@@ -45,6 +46,7 @@ menu > ul {
     list-style-type: none;
     color: white;
     background-color: rgb(78, 71, 71);
+    
    
  
 }
