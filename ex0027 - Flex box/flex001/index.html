@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+
+            /*
+            flex direction exi
+            stem 4 configurações;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+            eixos (axis)
+            main-axis (main-start e main-end)
+            cross-axis (cross-start e cross-end)
+            */
+        }
+
+        div.item {
+            background-color: rgb(159, 113, 202);
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+
+    </div>
+</body>
+</html>

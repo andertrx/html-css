@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            background-color: aqua;
+            display: flex;
+            flex-wrap: nowrap;
+            
+           
+
+            /*
+            flex direction exi
+            stem 4 configurações;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+            ------------------------------------
+
+            eixos (axis)
+            main-axis (main-start e main-end)
+            cross-axis (cross-start e cross-end)
+            ----------------------------------------
+
+            flex-wrap (encapsulamento)
+            *o encolhimento do bloco vai depender do conteúdo interno dele*
+
+            ex : flex-wrap: nowrap;    *esse é o valor padrão*
+
+            ----------------------------------------------------
+
+            flex-wrap: wrap;   *ele pega o ultimo elemento e quebra no sentido do eixo cross-axis *
+            ---------------------------------------------------------
+
+
+            flex-wrap: wrap-reverse; **ele pega o ultimo elemento e quebra ao contrário do  sentido do eixo cross-axis **
+
+
+
+
+            */
+        }
+
+        div.item {
+            background-color: rgb(159, 113, 202);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+
+    </div>
+</body>
+</html>
