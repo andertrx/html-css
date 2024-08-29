@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+
+            /*
+            flex direction exi
+            stem 4 configurações;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+  **********************************************************
+
+            eixos (axis)
+            main-axis (main-start e main-end)
+            cross-axis (cross-start e cross-end)
+ ************************************************************
+
+
+        flex-wrap (encapsulamento)
+        *o encolhimento do bloco vai depender do conteúdo interno dele*
+
+        1 - flex-wrap: nowrap;    *esse é o valor padrão*
+
+          
+        2 - flex-wrap: wrap;   *ele pega o ultimo elemento e quebra no sentido do eixo transversal cross-axis 
+
+        3 -  flex-wrap: wrap-reverse; **ele pega o ultimo elemento e quebra ao contrário do  sentido do eixo transversal cross-axis **
+***************************************************************
+            
+        flex-flow  ( flex direction + flex wrap) shorthand 
+
+        ex : flex-flow: row nowrap;
+
+**************************************************************        Justify-content : flex-start ( o item vai ficar       grudado   do lado do main start)
+
+        Justify-content : flex-end ( o item vai ficar grudado do lado do main end)
+
+        Justify-content : flex-center  ( o item vai ficar grudado ao centro do main e dexar espaços iguais  tanto no começo e no fim do container)
+
+        justify-content : space-between  ( os itens vai ficar grudado  nos dois extremos dos eixos e distribuir por igual os outros)
+
+        justify-content : space-evenly  ( os itens vao ter espaçamentos iguais e não ficarão grudados nem no main start nem no end
+
+
+         justify-content : space-around ( divide o container e 3 áreas iguais , e centraliza os elementos dentro dos espaços
+        
+***********************************************************
+            align-itens ( alinhamento dos itens no eixo transversal, 'cross-axis')
+
+            align-itens:stretch   (valor padrao)
+
+            align-itens:flex-start ()
+            
+            align-itens:center ()
+
+
+*************************************************************
+
+        align-content (alinha os itens no eixo transversal quando ele estao empacotados)
+        
+        align-content:stretch   (valor padrao)
+
+
+        align-content:flex-start( pEga todos elementos e joga para o inicio do main start)
+
+        align-content:flex-end ( pEga todos elementos e joga para o inicio do main end)
+
+        align-content:center ( pEga todos elementos e joga para o centro do cross axis)
+
+        align-content:space-between
+        
+        align-content:space-evenly
+        
+        align-content:space-around
+
+
+
+            */
+      
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: blanchedalmond;
+        }
+
+        main{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-flow: row wrap;
+            align-items:  center;
+            
+        }
+
+        section {
+            background-color: blueviolet;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>1</h1>
+            
+        </section>
+        <section>
+            <h1>2</h1>
+            
+        </section>
+        <section>
+            <h1>3</h1>
+            
+        </section>
+    </main>
+</body>
+</html>
