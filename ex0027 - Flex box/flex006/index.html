@@ -52,13 +52,18 @@
          justify-content : space-around ( divide o container e 3 áreas iguais , e centraliza os elementos dentro dos espaços
         
 ***********************************************************
-            align-itens ( alinhamento dos itens no eixo transversal, 'cross-axis')
+            align-itens ( alinhamento dos itens no eixo transversal, 'cross-axis'  )
 
             align-itens:stretch   (valor padrao)
 
             align-itens:flex-start ()
             
             align-itens:center ()
+            
+            
+            align-itens:end ()
+
+         align-itens:baseline ( os itens ficarao sempre alinhados sempre com a linha de base independente do tamanho do item )
 
 
 *************************************************************
@@ -88,8 +93,12 @@
             background-color: aqua;
             display: flex;
             flex-flow: row wrap;
+            Justify-content : space-around;
+            align-items: end;
+            align-content: space-around;
+
             height: 400px;
-            align-content: space-between;
+            
 
 
         }
@@ -97,8 +106,9 @@
         div.item {
             background-color: rgb(159, 113, 202);
             border: 1px solid black;
-            padding: 40px;
+            padding: 60px;
             text-align: center;
+            
            
         }
 
@@ -110,15 +120,16 @@
         <div class="item">a</div>
         <div class="item">b</div>
         <div class="item">c</div>
-        <div class="item">d</div>
-        <div class="item">e</div>
-        <div class="item">f</div>
-        <div class="item">d</div>
-        <div class="item">e</div>
-        <div class="item">f</div>
-        <div class="item">d</div>
-        <div class="item">e</div>
-        <div class="item">f</div>
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        
 
     </div>
 </body>
