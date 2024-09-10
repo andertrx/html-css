@@ -7,7 +7,7 @@
     <style>
        
 
-             /*
+            /*
             flex direction exi
             stem 4 configurações;
             flex-direction: row;
@@ -86,14 +86,12 @@
         align-content:space-around
 
 *************************************************************
-                  configuração de itens 
-                  
-Order ( utilizaremos nos itens), por padrao p order é 0   - order:0  (você pode usar tantro números positivos ou negativos para setar a posição)
+ Order ( utilizaremos nos itens), por padrao p order é 0   - order:0  (você pode usar tantro números positivos ou negativos para setar a posição)
 
 ***************************************************************
 align- Self ( utilizaremos nos itens ( Funciona diretamente no cross-axis  e funcionana parea cada item específico)
 
-auto - herda a caracteristica de alinahmento vertical do pai
+auto - Erda a caracteristica de alinahmento vertical do pai
 flex-start
 flex-end
 flex-center
@@ -123,23 +121,38 @@ flex-stretch
            
         }
 
+        div#x1 {
+            order: 7;
+        }
+
+        div#x2 {
+            order: 4;
+        }
+
+        div#x3 {
+            order: 3;
+        }
+
+        div#x4 {
+            order: 3;
+        }
+
+        div#x5 {
+            order: 2;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
+        <div class="item" id="x1">a</div>
+        <div class="item"id="x2">b</div>
+        <div class="item"id="x3">c</div>
+        <div class="item"id="x4">d</div>
+        <div class="item"id="x5"></div>
+        <div class="item"id="x6">f</div>
+        <div class="item"id="x7">g</div>
+ 
         
 
     </div>

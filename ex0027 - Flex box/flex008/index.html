@@ -7,7 +7,7 @@
     <style>
        
 
-             /*
+            /*
             flex direction exi
             stem 4 configurações;
             flex-direction: row;
@@ -104,10 +104,7 @@ flex-stretch
             background-color: aqua;
             display: flex;
             flex-flow: row wrap;
-            Justify-content : space-around;
-            
-            align-content: space-around;
-
+            align-items: flex-start;
             height: 400px;
             
 
@@ -123,23 +120,38 @@ flex-stretch
            
         }
 
+        div#x1 {
+            align-self: flex-end ;
+        }
+
+        div#x2 {
+            align-self: stretch;
+        }
+
+        div#x3 {
+           align-self: center;
+        }
+
+        div#x4 {
+          
+        }
+
+        div#x5 {
+            
+        }
     </style>
 </head>
 <body>
     <div class="container">
         
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
+        <div class="item" id="x1">a</div>
+        <div class="item"id="x2">b</div>
+        <div class="item"id="x3">c</div>
+        <div class="item"id="x4">d</div>
+        <div class="item"id="x5">e</div>
+        <div class="item"id="x6">f</div>
+        <div class="item"id="x7">g</div>
+ 
         
 
     </div>

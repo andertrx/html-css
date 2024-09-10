@@ -11,7 +11,6 @@
            flex-flow: row wrap;
             
            
-
             /*
             flex direction exi
             stem 4 configurações;
@@ -43,7 +42,7 @@
 
         ex : flex-flow: row nowrap;
 
-**************************************************************        Justify-content : flex-start ( o item vai ficar       grudado   do lado do main end)
+**************************************************************        Justify-content : flex-start ( o item vai ficar       grudado   do lado do main start)
 
         Justify-content : flex-end ( o item vai ficar grudado do lado do main end)
 
@@ -56,12 +55,53 @@
 
          justify-content : space-around ( divide o container e 3 áreas iguais , e centraliza os elementos dentro dos espaços
         
+***********************************************************
+            align-itens ( alinhamento dos itens no eixo transversal, 'cross-axis'  )
+
+            align-itens:stretch   (valor padrao)
+
+            align-itens:flex-start ()
+            
+            align-itens:center ()
+            
+            
+            align-itens:end ()
+
+         align-itens:baseline ( os itens ficarao sempre alinhados sempre com a linha de base independente do tamanho do item )
 
 
+*************************************************************
+
+        align-content (alinha os itens no eixo transversal quando ele estao empacotados ' wrap ou wrap-reverse')
+        
+        align-content:stretch   (valor padrao)
 
 
+        align-content:flex-start( pEga todos elementos e joga para o inicio do main start)
 
+        align-content:flex-end ( pEga todos elementos e joga para o inicio do main end)
 
+        align-content:center ( pEga todos elementos e joga para o centro do cross axis)
+
+        align-content:space-between
+        
+        align-content:space-evenly
+        
+        align-content:space-around
+
+*************************************************************
+                  configuração de itens 
+                  
+Order ( utilizaremos nos itens), por padrao p order é 0   - order:0  (você pode usar tantro números positivos ou negativos para setar a posição)
+
+***************************************************************
+align- Self ( utilizaremos nos itens ( Funciona diretamente no cross-axis  e funcionana parea cada item específico)
+
+auto - herda a caracteristica de alinahmento vertical do pai
+flex-start
+flex-end
+flex-center
+flex-stretch
             */
         }
 
