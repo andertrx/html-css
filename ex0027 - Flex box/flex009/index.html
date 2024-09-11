@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.container {
-            background-color: aqua;
-            display: flex;
-           flex-flow: row wrap;
-            
-           
+       
             /*
             flex direction exi
             stem 4 configurações;
@@ -104,33 +99,56 @@ flex-center
 flex-stretch
 
 ********************************************************************************************
-flex-basis  (Vem como padrão a opção 'auto', o tamanho do elemento no seu eixo principal é ditado pelo tamanho do conteúdo interno)
+Controle do tamanho de itens flexíveis
 
+flex-basis  (Vem como padrão a opção 'auto', o tamanho do elemento no seu eixo principal é ditado pelo tamanho do conteúdo interno), você pode até setar o tamanho de cada item ex: 300px, porém  quando você diminui a tela e ela fica menor que o tamanho dos itens, ela diminui os itens e vai adaptando o conteúdo.
 
+flex-basis:auto
+
+flex-shrink:1 (por padrão é 1)
+flex-grow:0 (por padrão é 0)
+
+1 pode crescer ou diminuir
+0 - não pode crescer ou diminuir
 
             */
+      
+        div.container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            height: 400px;
+            
+
+
         }
 
         div.item {
             background-color: rgb(159, 113, 202);
             border: 1px solid black;
+            padding: 60px;
             text-align: center;
-            padding: 10px;
-            /*flex: auto;*/
-
+            flex-basis: auto;
+            
+           
         }
 
+        
     </style>
 </head>
 <body>
     <div class="container">
         
-        <div class="item">Exemplo de bloco a</div>
-        <div class="item">Exemplo de bloco b</div>
-        <div class="item">Exemplo de bloco c</div>
-        <div class="item">Exemplo de bloco d</div>
-        <div class="item">Exemplo de bloco e</div>
-        <div class="item">Exemplo de bloco f</div>
+        <div class="item"id="x1">adaptando counteúdo</div>
+        <div class="item"id="x2">b</div>
+        <div class="item"id="x3">adaptando um conteúdo um pouco maior</div>
+        <div class="item"id="x4">d</div>
+        <div class="item"id="x5">e</div>
+        <div class="item"id="x6">f</div>
+        
+ 
+        
 
     </div>
 </body>
