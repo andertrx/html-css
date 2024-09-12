@@ -15,26 +15,47 @@ body {
 }
 
 header {
+   display: flex;
     background-color: rgb(130, 150, 150);
     padding: 10px;
     color: white;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
  }
 
  header >h1 {
     border: 1px solid black;
+    flex: 0 0 200px;
  }
 
  header > nav {
-    border: 1px solid black;
+   
+   display: flex;
+   flex-flow: row wrap ;
+   border: 1px solid black;
     margin: 10px;
+    justify-content: flex-end;
+    
  }
 
  header > nav >a{
  
     text-decoration: none;
     color: white;
-
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
  }
+
+ header > nav >a:hover{
+ 
+  background-color: aliceblue;
+  color: black;
+  transition: .5s;
+}
 
 
  main {
