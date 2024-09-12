@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+            /*
+            flex direction exi
+            stem 4 configurações;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+  **********************************************************
+
+            eixos (axis)
+            main-axis (main-start e main-end)
+            cross-axis (cross-start e cross-end)
+ ************************************************************
+
+
+        flex-wrap (encapsulamento)
+        *o encolhimento do bloco vai depender do conteúdo interno dele*
+
+        1 - flex-wrap: nowrap;    *esse é o valor padrão*
+
+          
+        2 - flex-wrap: wrap;   *ele pega o ultimo elemento e quebra no sentido do eixo transversal cross-axis 
+
+        3 -  flex-wrap: wrap-reverse; **ele pega o ultimo elemento e quebra ao contrário do  sentido do eixo transversal cross-axis **
+***************************************************************
+            
+        flex-flow  ( flex direction + flex wrap) shorthand 
+
+        ex : flex-flow: row nowrap;
+
+**************************************************************        Justify-content : flex-start ( o item vai ficar       grudado   do lado do main start)
+
+        Justify-content : flex-end ( o item vai ficar grudado do lado do main end)
+
+        Justify-content : flex-center  ( o item vai ficar grudado ao centro do main e dexar espaços iguais  tanto no começo e no fim do container)
+
+        justify-content : space-between  ( os itens vai ficar grudado  nos dois extremos dos eixos e distribuir por igual os outros)
+
+        justify-content : space-evenly  ( os itens vao ter espaçamentos iguais e não ficarão grudados nem no main start nem no end
+
+
+         justify-content : space-around ( divide o container e 3 áreas iguais , e centraliza os elementos dentro dos espaços
+        
+***********************************************************
+            align-itens ( alinhamento dos itens no eixo transversal, 'cross-axis'  )
+
+            align-itens:stretch   (valor padrao)
+
+            align-itens:flex-start ()
+            
+            align-itens:center ()
+            
+            
+            align-itens:end ()
+
+         align-itens:baseline ( os itens ficarao sempre alinhados sempre com a linha de base independente do tamanho do item )
+
+
+*************************************************************
+
+        align-content (alinha os itens no eixo transversal quando ele estao empacotados ' wrap ou wrap-reverse')
+        
+        align-content:stretch   (valor padrao)
+
+
+        align-content:flex-start( pEga todos elementos e joga para o inicio do main start)
+
+        align-content:flex-end ( pEga todos elementos e joga para o inicio do main end)
+
+        align-content:center ( pEga todos elementos e joga para o centro do cross axis)
+
+        align-content:space-between
+        
+        align-content:space-evenly
+        
+        align-content:space-around
+
+*************************************************************
+                  configuração de itens 
+                  
+Order ( utilizaremos nos itens), por padrao p order é 0   - order:0  (você pode usar tantro números positivos ou negativos para setar a posição)
+
+***************************************************************
+align- Self ( utilizaremos nos itens ( Funciona diretamente no cross-axis  e funcionana parea cada item específico)
+
+auto - herda a caracteristica de alinahmento vertical do pai
+flex-start
+flex-end
+flex-center
+flex-stretch
+
+********************************************************************************************
+Controle do tamanho de itens flexíveis
+
+flex-basis  (Vem como padrão a opção 'auto', o tamanho do elemento no seu eixo principal é ditado pelo tamanho do conteúdo interno), você pode até setar o tamanho de cada item ex: 300px, porém  quando você diminui a tela e ela fica menor que o tamanho dos itens, ela diminui os itens e vai adaptando o conteúdo.
+
+flex-basis:auto
+
+flex-shrink:1 (por padrão é 1)
+flex-grow:0 (por padrão é 0)
+
+1 pode crescer ou diminuir
+0 - não pode crescer ou diminuir
+
+eles aceitam outros valores como 2,3,4 (porém tem que ser calculado a proporcção (EX  0 1 2)  o item dois vai crescer o dobro do 1  (estamos falando de itens)
+
+
+IMPORTANTE - PODEMOS USAR A SHORTHAND 
+
+flex (flex-grow + flex-shrink + flex basis)
+
+ex: flex: 0 1 150px
+
+
+            */
+      
+        div.container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+            
+            
+            
+
+
+        }
+
+        div.item {
+            background-color: rgb(159, 113, 202);
+            border: 1px solid black;
+            
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+
+        div#cxa {
+           flex-shrink: 0;
+           flex-grow: 0;
+        }
+
+         div#cxb {
+          flex-shrink: 0;
+          flex-grow: 1;  
+        }
+
+        div#cxc {
+          flex-shrink: 0;
+          flex-grow: 0;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="item"id="cxa">a</div>
+        <div class="item"id="cxb">b</div>
+        <div class="item"id="cxc">c</div>
+      
+        
+ 
+        
+
+    </div>
+</body>
+</html>
