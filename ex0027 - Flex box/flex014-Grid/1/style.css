@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    font-family: system-ui;
+   
+    
+  }
+  
+  .wrapper {
+    display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr; /*  Significa fração, pode-se usar repeat(3, 1fr);*/
+    /*grid-template-columns: repeat(3, 200px);  Declaramos  que queremos 3x um item com 200px
+    ou
+    
+    */
+    
+    /*grid-template-columns: 200px 200px 200px;
+    Ou
+    grid-template-columns: 200px 200px 40%; ► elementos com 200px e o último com 200% da tela.
+    
+    Ou
+  
+    grid-template-columns: minmax(200px, 40%) 200px 200px; ► Vai ter o tamanho mínimo de 200px, e máximo 40% do tamanho da tela 
+    
+    */
+    
+      /*grid-column-gap: 1rem;
+    grid-row-gap:1rem;
+    **pode se usar a declaração abaixo para substituir as duas de cima
+    */
+    grid-gap: 1rem;
+    grid-auto-rows:200px 200px; /* Cria linhas automáticas*/
+    justify-items: center;
+    align-items: end;
+  }
+  
+  .wrapper div:nth-child(2) {
+    align-self: center; /*alinha um item específico*/
+    justify-self: start;/*alinha um item específico*/
+  }
+  .wrapper div {
+    background-color: Royalblue;
+  }
+  
+  .wrapper div:nth-child(even) {
+    background-color:skyblue;
+  }

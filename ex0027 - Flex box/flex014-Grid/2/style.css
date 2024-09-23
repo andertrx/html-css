@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    background-color: rgb(247, 50, 214);
+    grid-template-rows:repeat(3, 200px); /* Cria linhas automáticas*/
+    grid-gap: 1rem;
+    justify-i
+}
+
+.wrapper div {
+    background-color: blue;
+}
+.wrapper div:nth-child(even) {
+    background-color: blueviolet;
+}
